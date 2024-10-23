@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="card">
+
+    <!-- 个人信息 -->
+    <view class="profile-info">
+      <!-- 像片 -->
+      <image class="avatar" src="{{avatarUrl}}" mode="aspectFill" />
+
+      <!-- 昵称和SteamId -->
+      <view class="user-details">
+        <text class="nickname">昵称：{{nickname}}</text>
+        <text class="steamid">SteamId：xxxxxx</text>
+      </view>
+    </view>
+  </view>
+</view>
