@@ -4,11 +4,13 @@
     <!-- 个人信息 -->
     <view class="profile-info">
       <!-- 像片 -->
-      <image class="avatar" src="{{avatarUrl}}" mode="aspectFill" />
+      <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseAvatar="onChooseAvatar">
+        <image class="avatar" src="{{avatarUrl}}" mode="aspectFill" />
+      </button>
 
       <!-- 昵称和SteamId -->
       <view class="user-details">
-        <text class="nickname">昵称：{{nickname}}</text>
+        <input class="nickname" class="weui-input" placeholder="请输入昵称"/>
         <text class="steamid">SteamId：xxxxxx</text>
       </view>
     </view>
