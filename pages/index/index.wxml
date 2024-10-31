@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container" >
   <view class="card">
 
     <!-- 个人信息 -->
@@ -10,9 +10,12 @@
 
       <!-- 昵称和SteamId -->
       <view class="user-details">
-        <input class="nickname" class="weui-input" placeholder="请输入昵称"/>
+        <input class="nickname weui-input" placeholder="请输入昵称"/>
         <text class="steamid">SteamId：xxxxxx</text>
       </view>
     </view>
   </view>
 </view>
+
+
+<mp-tabbar list="{{tabbar}}" class="tabbar"></mp-tabbar>

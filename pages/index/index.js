@@ -9,8 +9,17 @@ Page({
     hasUserInfo: false, // 是否已有用户信息
     avatarUrl: defaultAvatarUrl, // 用户头像
     nickName: '', // 用户昵称
+    buttons: [{text: '取消'}, {text: '确认'}],
+    tabbar:getApp().globalData.indexTabbarLists   //获取tabbar数据
   },
 
+  
+  tabChange(e) {
+    getApp().tabChange(e);
+  },
+
+
+  
   onChooseAvatar(e) {
     const { avatarUrl } = e.detail 
     this.setData({
@@ -21,7 +30,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.getUserProfile();  //页面加载时自动获取用户信息
+    
   },
 
   /**

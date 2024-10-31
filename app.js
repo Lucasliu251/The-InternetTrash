@@ -15,6 +15,24 @@ App({
   },
 
   globalData: {
-    userInfo: null
+    userInfo: null,
+    indexTabbarLists:[{
+      "pagePath": "/pages/index/index",
+      "text": '首页',
+
+    },
+    {
+      "pagePath": "/pages/logs/logs",
+      "text": '日志'
+    }],
+  },
+
+  
+  //更新tabbar
+  tabChange: function(e) {
+    wx.redirectTo({
+      url: e.detail.item.pagePath
+    })
   }
+
 })
