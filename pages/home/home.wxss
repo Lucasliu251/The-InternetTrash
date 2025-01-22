@@ -1,0 +1,103 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20rpx;
+    padding: 20rpx;
+  }
+  
+.section {
+border: 1px solid #ddd;
+border-radius: 8rpx;
+padding: 16rpx;
+}
+
+.section-title {
+font-size: 32rpx;
+font-weight: bold;
+margin-bottom: 16rpx;
+}
+
+.kook-placeholder {
+text-align: center;
+font-size: 28rpx;
+color: #888;
+}
+
+.data-table {
+width: 100%;
+}
+
+.table-header, .table-row {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+border-bottom: 1px solid #ddd;
+padding: 8rpx 0;
+}
+
+.header-cell {
+font-weight: bold;
+flex: 1;
+}
+
+.cell {
+flex: 1;
+}
+.kook-window {
+background-color: #444444; /* 黑色背景 */
+padding: 20rpx;
+}
+
+.channel {
+display: flex;
+align-items: center;
+margin-bottom: 20rpx;
+border-bottom: 1px solid #616161; /* 分割线 */
+padding-bottom: 10rpx;
+}
+
+.channel-name {
+color: #fff; /* 白色文字 */
+font-size: 30rpx;
+flex: 1;
+}
+
+.users {
+display: flex;
+gap: 10rpx;
+}
+
+.user-avatar {
+width: 50rpx;
+height: 50rpx;
+border-radius: 50%; /* 圆角头像 */
+border: 2rpx solid #39e; /* 亮绿色边框 */
+}
+.footer-banner {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #66cc33; /* Kook绿色 */
+padding: 10px 20px;
+border-radius: 5px 5px 0 0;
+}
+
+.kook-logo img {
+height: 30px;
+}
+
+.connect-button {
+background-color: white;
+color: black;
+border: 1px solid #ccc;
+border-radius: 15px;
+padding: 5px 15px;
+font-size: 14px;
+cursor: pointer;
+}
+
+.connect-button:hover {
+background-color: #f0f0f0;
+}
+  
+  

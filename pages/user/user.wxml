@@ -1,0 +1,54 @@
+<view class="container">
+  <!-- 顶部区域 -->
+  <view class="header">
+    <image class="avatar" src="/assets/avatar.png" />
+    <view class="user-info">
+      <text class="username">Lucas</text>
+      <text class="call-sign">呼号：BG7KYQ</text>
+    </view>
+  </view>
+
+  <!-- 功能列表 -->
+  <view class="feature-list">
+    <view class="feature-item">
+      <text>支持作者</text>
+      <text class="action">加鸡腿</text>
+    </view>
+    <view class="feature-item">
+      <text>高光时刻</text>
+    </view>
+    <view class="feature-item">
+      <text>在线打卡</text>
+      <text class="info">累计打卡6天</text>
+    </view>
+    <view class="feature-item">
+      <text>火腿福利</text>
+      <text class="info">4火腿币</text>
+    </view>
+    <view class="feature-item">
+      <text>关注公众号</text>
+    </view>
+    <view class="feature-item">
+      <text>好物推荐</text>
+    </view>
+    <view class="feature-item">
+      <text>分享好友</text>
+    </view>
+    <view class="feature-item">
+      <text>清除缓存</text>
+    </view>
+    <view class="feature-item">
+      <text>帮助中心</text>
+    </view>
+    <view class="feature-item">
+      <text>关于工具集</text>
+    </view>
+  </view>
+
+  <!-- 底部状态栏 -->
+  <tabbar
+  activeIndex="{{activeIndex}}"
+  bindchangeTab="onTabChange"
+  ></tabbar>
+
+</view>

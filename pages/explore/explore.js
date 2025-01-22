@@ -1,11 +1,11 @@
-// pages/logs/logs.js
+// pages/explore/explore.js
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: {
-
+  data: { 
+    activeIndex: 1, 
   },
 
   /**

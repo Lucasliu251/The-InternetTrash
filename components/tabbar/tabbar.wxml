@@ -1,0 +1,5 @@
+<mp-tabbar 
+    active="{{activeIndex}}" 
+    bindchange="onTabChange" 
+    list="{{tabbarList}}">
+</mp-tabbar>

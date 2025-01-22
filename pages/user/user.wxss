@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f4f4f4;
+  }
+  
+  /* 顶部区域样式 */
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: #ffffff;
+  }
+  
+  .avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .username {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .call-sign {
+    font-size: 14px;
+    color: #888888;
+  }
+  
+  /* 功能列表样式 */
+  .feature-list {
+    flex: 1;
+    margin-top: 8px;
+    background-color: #ffffff;
+  }
+  
+  .feature-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .feature-item:last-child {
+    border-bottom: none;
+  }
+  
+  .action, .info {
+    color: #888888;
+    font-size: 14px;
+  }
+  
+  /* 底部状态栏样式 */
+  .tab-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 56px;
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+  }
+  
+  .tab-item {
+    font-size: 16px;
+    color: #888888;
+  }
+  
+  .tab-item.active {
+    font-weight: bold;
+    color: #000000;
+  }
+  

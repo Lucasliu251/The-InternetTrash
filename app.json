@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/explore/explore",
+    "pages/user/user",
+    "pages/index/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -1,0 +1,39 @@
+<view class="home-container">
+  <!-- Kook 语音版块 -->
+  <view class="kook-window">
+    <view class="channel">
+      <text class="channel-name">哑巴频道</text>
+    </view>
+    <view class="channel">
+      <text class="channel-name">深夜TV</text>
+    </view>
+    <view class="channel">
+      <text class="channel-name">秋秋爱</text>
+    </view>
+  </view>
+  <div class="footer-banner">
+    <div class="kook-logo">
+      <!-- <img src="kook.svg" alt="Kook Logo"> -->
+    </div>
+    <button class="connect-button">连接语音</button>
+  </div>
+
+  <!-- 数据查询版块 -->
+  <view class="section data-query">
+    <text class="section-title">数据查询</text>
+    <view class="data-table">
+      <view class="table-header">
+        <text class="header-cell">Rank</text>
+        <text class="header-cell">★StarTrack™️</text>
+        <text class="header-cell">K/D 比</text>
+      </view>
+      <block wx:for="{{tableData}}" wx:key="rank">
+        <view class="table-row">
+          <text class="cell">{{item.rank}}</text>
+          <text class="cell">{{item.starTrack}}</text>
+          <text class="cell">{{item.kdRatio}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
