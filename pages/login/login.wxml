@@ -1,4 +1,4 @@
 <!--pages/login/login.wxml-->
 <view class="container">
-  <button bindtap="onLogin">登录</button>
+  <button bindtap="goProfile">个人资料</button>
 </view>

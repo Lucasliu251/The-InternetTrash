@@ -1,0 +1,41 @@
+<!--pages/profile/profile.wxml-->
+<view class="profile-container">
+  <view class="page-title">个人资料</view>
+  <form class="form-section">
+    <view class="form-row">
+      <label>头像:</label>
+      <image class="avatar" src="{{avatarUrl}}"></image>
+    </view>
+    <view class="form-row">
+      <label>昵称：</label>
+      <input type="text" placeholder="请输入昵称" value="{{nickname}}" />
+    </view>
+    <view class="form-row">
+      <label>手机号：</label>
+      <input type="text" placeholder="请输入手机号" value="{{phoneNumber}}" />
+    </view>
+    <view class="form-row">
+      <label>邮箱：</label>
+      <input type="text" placeholder="请输入邮箱" value="{{email}}" />
+    </view>
+  </form>
+  <form class="form-section steam-form">
+    <view class="steam-form-title">Steam账户管理</view>
+    <view class="form-row">
+      <label>SteamID：</label>
+      <input type="text" placeholder="请输入SteamID" value="{{steamID}}" />
+    </view>
+    <view class="form-row">
+      <label>SteamKEY：</label>
+      <input type="text" placeholder="请输入SteamKEY" value="{{steamKEY}}" />
+    </view>
+    <view class="form-row">
+      <label>Steam Match Code：</label>
+      <input type="text" placeholder="CSGO - ***** - ***** - ***** - *****" value="{{steamMatchCode}}" />
+    </view>
+    <view class="form-row">
+      <label>Steam Authentication Code：</label>
+      <input type="text" placeholder="****-********" value="{{steamAuthCode}}" />
+    </view>
+  </form>
+</view>

@@ -1,0 +1,41 @@
+.profile-container {
+    padding: 20px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-section {
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-row label {
+    width: 80px;
+    margin-right: 10px;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .steam-form {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .steam-form-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
