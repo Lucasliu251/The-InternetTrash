@@ -1,41 +1,35 @@
 <!--pages/profile/profile.wxml-->
-<view class="profile-container">
-  <view class="page-title">个人资料</view>
-  <form class="form-section">
-    <view class="form-row">
-      <label>头像:</label>
-      <image class="avatar" src="{{avatarUrl}}"></image>
+<view class="flex gap-4 items-center">
+  <image class="w-16 h-16 rounded-full" src="{{avatarUrl}}"></image>
+  <view class="flex flex-col gap-2">
+    <view class="text-xl leading-6 font-semibold text-text-primary">{{nickname}}</view>
+    <view class="text-sm text-text-secondary">{{email}}</view>
+  </view>
+</view>
+
+<view class="relative w-full pb-16">
+  <view>
+    <view class="flex flex-col gap-9">
+      <view class="bg-gray-900 rounded-lg">
+        <view class="space-y-1 px-6 py-6 border-b border-gray-800 flex items-center">
+          <view class="flex flex-col gap-1 flex-1">
+            <view class="text-lg leading-6 font-medium text-text-primary">我的主页</view>
+            <view class="max-w-2xl text-sm text-text-secondary">这些信息只会在我们的内部排行榜上公开显示。</view>
+          </view>
+          <button bindtap="" class="text-text-primary bg-gray-800 text-xs font-medium rounded-md px-3 py-205">View</button>
+        </view>
+        <view class="px-6">
+          <view class="divide-y divide-gray-800">
+            <view class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4">
+              <view class="text-text-primary">Name</view>
+              <view class="mt-1 flex text-text-secondary sm:mt-0 sm:col-span-2">
+                <view class="flex-grow">Lucas</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
     </view>
-    <view class="form-row">
-      <label>昵称：</label>
-      <input type="text" placeholder="请输入昵称" value="{{nickname}}" />
-    </view>
-    <view class="form-row">
-      <label>手机号：</label>
-      <input type="text" placeholder="请输入手机号" value="{{phoneNumber}}" />
-    </view>
-    <view class="form-row">
-      <label>邮箱：</label>
-      <input type="text" placeholder="请输入邮箱" value="{{email}}" />
-    </view>
-  </form>
-  <form class="form-section steam-form">
-    <view class="steam-form-title">Steam账户管理</view>
-    <view class="form-row">
-      <label>SteamID：</label>
-      <input type="text" placeholder="请输入SteamID" value="{{steamID}}" />
-    </view>
-    <view class="form-row">
-      <label>SteamKEY：</label>
-      <input type="text" placeholder="请输入SteamKEY" value="{{steamKEY}}" />
-    </view>
-    <view class="form-row">
-      <label>Steam Match Code：</label>
-      <input type="text" placeholder="CSGO - ***** - ***** - ***** - *****" value="{{steamMatchCode}}" />
-    </view>
-    <view class="form-row">
-      <label>Steam Authentication Code：</label>
-      <input type="text" placeholder="****-********" value="{{steamAuthCode}}" />
-    </view>
-  </form>
+
+  </view>
 </view>
